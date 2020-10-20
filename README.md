@@ -1,20 +1,41 @@
 # Golf Store - API Server w/ MongoDB 
+##### MAIN URL: https://node-server-db.herokuapp.com/golf
 *This server will return/update/create data at the described endpoints (URLs) below:*
 
 ## GET
-##### URL: https://nodejs-api-server-dgm3760.herokuapp.com/api/characters
-*Hitting this endpoint will load Harry Potter JSON data of 3 characters from local memory.*
+##### URL: https://node-server-db.herokuapp.com/golf
+*Hitting this endpoint will get all golf product JSON data from the database.*
 
 ## POST
-##### URL: https://nodejs-api-server-dgm3760.herokuapp.com/api/characters/new
-*Hitting this endpoint will add the object with Sirius Black onto the characters array with JSON data (4 item) to local memory.*
-
-## PUT (UPDATE)
-##### URL: https://nodejs-api-server-dgm3760.herokuapp.com/api/characters/update/:id
-##### USE PATH VAR ID -> 5a12327c0f5ae10021650d94
-*Hitting this endpoint and using this id will update the 3rd item in the JSON data's name from ***Salazar Slytherin*** to ***Tyler Ivie****
+##### URL: https://node-server-db.herokuapp.com/golf?name=SIM Driver&category=TaylorMade&price=$549.99&qty=7
+*Hitting this endpoint will add a new golf product to the database with the above params.*
 
 ## DELETE
-##### URL: https://nodejs-api-server-dgm3760.herokuapp.com/api/characters/delete/:id
-##### USE PATH VAR ID -> 5a12327c0f5ae10021650d94
-*Hitting this endpoint and using this id will delete the 3rd item in the JSON data.*
+##### URL: https://node-server-db.herokuapp.com/golf/5f8e675e2302ef8a45b29131
+*Hitting this endpoint and using this id will delete the ***Titleist Golf Glove*** from the database.*
+
+## PUT (UPDATE)
+##### URL: https://node-server-db.herokuapp.com/golf/5f8e66212302ef8a45b2912c?qty=15
+*Hitting this endpoint and using this id will update ***TaylorMade Spider S Chalk Putter*** quantity in the database from
+ ***25*** to ***15****
+
+## GET
+##### URL: https://node-server-db.herokuapp.com/manufactures
+*Hitting this endpoint will get all manufactures JSON data from the database.*
+
+## POST
+##### URL: https://node-server-db.herokuapp.com/manufactures?name=Bridgestone&address=999 Park Ave. NY, U.S.A&phone=(455) 123-4567
+*Hitting this endpoint will add a new manufacture to the database with the above params.*
+
+## PUT (UPDATE)
+##### URL: https://node-server-db.herokuapp.com/manufactures/5f8e65282302ef8a45b29129?address=1000 Beaverton, OR, U.S.A
+*Hitting this endpoint and using this id will update the manufacture ***Nike's*** address in the database from
+ ***Beaverton, OR*** to ***1000 Beaverton, OR, U.S.A****
+ 
+## DELETE
+##### URL: https://node-server-db.herokuapp.com/manufactures/5f8e65282302ef8a45b29129
+*Hitting this endpoint and using this id will delete the manufacture ***Nike*** from the database.*
+
+## GET
+##### URL: https://node-server-db.herokuapp.com/manufactureProducts?name=TaylorMade
+*Hitting this endpoint will get all golf products from a given manufacture from the database.*
