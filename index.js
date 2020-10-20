@@ -11,8 +11,8 @@ app.use(bodyParser.json());
 mongoose.connect('mongodb+srv://dbAdminUser:r11r2jFZkQ9VhIdQ@nodestorecluster.ob64v.mongodb.net/golf?retryWrites=true&w=majority',
     {useNewUrlParser: true, useUnifiedTopology: true});
 
-app.listen(process.env.PORT || 3004,    () => {
-    console.log("Server running on port 3000");
+app.listen(process.env.PORT || 3004, () => {
+    console.log("Server running on port 3004");
 })
 
 // ******* GOLF CRUD METHODS *******
