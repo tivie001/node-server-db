@@ -2,6 +2,8 @@
 ##### MAIN URL: https://node-server-db.herokuapp.com/golf
 *This server will return/update/create data at the described endpoints (URLs) below:*
 
+# GOLF PRODUCTS
+
 ## GET
 ##### URL: https://node-server-db.herokuapp.com/golf
 *Hitting this endpoint will get all golf product JSON data from the database.*
@@ -18,6 +20,8 @@
 ##### URL: https://node-server-db.herokuapp.com/golf/5f8e66212302ef8a45b2912c?qty=15
 *Hitting this endpoint and using this id will update ***TaylorMade Spider S Chalk Putter*** quantity in the database from
  ***25*** to ***15****
+ 
+# GOLF MANUFACTURES
 
 ## GET
 ##### URL: https://node-server-db.herokuapp.com/manufactures
