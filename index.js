@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://dbAdminUser:r11r2jFZkQ9VhIdQ@nodestorecluster.ob64v.mongodb.net/golf?retryWrites=true&w=majority',
+mongoose.connect(process.env.MONGODB_URI,
     {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.listen(process.env.PORT || 3000, () => {
