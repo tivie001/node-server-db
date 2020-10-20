@@ -8,10 +8,10 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-mongoose.connect(process.env.MONGODB_URI,
+mongoose.connect('mongodb+srv://dbAdminUser:r11r2jFZkQ9VhIdQ@nodestorecluster.ob64v.mongodb.net/golf?retryWrites=true&w=majority',
     {useNewUrlParser: true, useUnifiedTopology: true});
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3004,    () => {
     console.log("Server running on port 3000");
 })
 
